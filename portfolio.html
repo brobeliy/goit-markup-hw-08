@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <div class="container main-nav">
+      <nav class="header-nav">
+        <a href="./index.html" class="logo"> <span class="logo__textweb">Web</span>Studio</a>
+        <ul class="header-nav__list list">
+          <li class="header-nav__item"><a href="./index.html"
+              class="header-nav__link ">Студия</a></li>
+          <li class="header-nav__item"><a href="./portfolio.html" class="header-nav__link header-nav__link--current">Портфолио</a></li>
+          <li class="header-nav__item"><a href="#" class="header-nav__link">Контакты</a></li>
+        </ul>
+      </nav>
+      <ul class="header-nav__contacts list">
+        <li class="contact header-nav__contact header-nav__contact--retreat">
+          <a href="mailto:info@devstudio.com" class="contact__link"><svg class="contact__icon" width="16px" height="12px">
+              <use href="./images/sprite.svg#icon-envelope"></use>
+            </svg>info@devstudio.com</a>
+        </li>
+        <li class="contact header-nav__contact header-nav__contact--retreat">
+          <a href="tel:+380961111111" class="contact__link"><svg class="contact__icon" width="10px" height="16px">
+              <use href="./images/sprite.svg#icon-telephone"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="portfolio container">
+        <h1 class="portfolio__title portfolio__title--visually-hidden">Наши проекты</h1>
+        <ul class="filter portfolio__filter list">
+          <li class="category filter__category"><button type="button" class="btn category__btn">Все</button></li>
+          <li class="category filter__category"><button type="button" class="btn category__btn">Веб-сайты</button></li>
+          <li class="category filter__category"><button type="button" class="btn category__btn">Приложения</button></li>
+          <li class="category filter__category"><button type="button" class="btn category__btn">Дизайн</button></li>
+          <li class="category filter__category"><button type="button" class="btn category__btn">Маркетинг</button></li>
+        </ul>
+
+        <ul class="projects portfolio__projects list">
+          <li class="projects__item">
+            <div class="card projects__card">
+            <a href="#" class="card__link">
+              <div class="card__thumb">
+              <img src="./images/notebook.jpg" alt="website of technokryak" width="370" class="card__img" />
+              <div class="card__overlay">
+              <p class="card__desc">Ресурс предлагает комплексные предложения с разным уровнем функционала 
+              и сервисов. Все это позволит посетителю получить
+              исчерпывающие сведения о компании или частном лице.</p>
+              </div>
+              </div>
+            <div class="perfomance card__perfomance">
+              <h2 class="perfomance__title">Технокряк</h2>
+              <p class="perfomance_desc">Веб-сайт</p>
+            </div>
+          </a>
+          </div> 
+          </li>
+          <li class="projects__item">
+            <div class="card projects__card">
+              <a href="#" class="card__link">
+                <div class="card__thumb">
+                  <img src="./images/basketball.jpg" alt="website of technokryak" width="370" class="card__img" />
+                  <div class="card__overlay">
+                    <p class="card__desc">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                      и сервисов. Все это позволит посетителю получить
+                      исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                </div>
+                <div class="perfomance card__perfomance">
+                  <h2 class="perfomance__title">Постер New Orlean vs Golden Star</h2>
+                  <p class="perfomance_desc">Дизайн</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="card projects__card">
+              <a href="#" class="card__link">
+                <div class="card__thumb">
+                  <img src="./images/fish.jpg" alt="website of technokryak" width="370" class="card__img" />
+                  <div class="card__overlay">
+                    <p class="card__desc">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                      и сервисов. Все это позволит посетителю получить
+                      исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                </div>
+                <div class="perfomance card__perfomance">
+                  <h2 class="perfomance__title">Ресторан Seafood</h2>
+                  <p class="perfomance_desc">Приложение</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="card projects__card">
+              <a href="#" class="card__link">
+                <div class="card__thumb">
+                  <img src="./images/headphones.jpg" alt="website of technokryak" width="370" class="card__img" />
+                  <div class="card__overlay">
+                    <p class="card__desc">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                      и сервисов. Все это позволит посетителю получить
+                      исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                </div>
+                <div class="perfomance card__perfomance">
+                  <h2 class="perfomance__title">Проект Prime</h2>
+                  <p class="perfomance_desc">Маркетинг</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="card projects__card">
+              <a href="#" class="card__link">
+                <div class="card__thumb">
+                  <img src="./images/bricks.jpg" alt="website of technokryak" width="370" class="card__img" />
+                  <div class="card__overlay">
+                    <p class="card__desc">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                      и сервисов. Все это позволит посетителю получить
+                      исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                </div>
+                <div class="perfomance card__perfomance">
+                  <h2 class="perfomance__title">Проект Boxes</h2>
+                  <p class="perfomance_desc">Приложение</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="card projects__card">
+              <a href="#" class="card__link">
+                <div class="card__thumb">
+                  <img src="./images/imac.jpg" alt="website of technokryak" width="370" class="card__img" />
+                  <div class="card__overlay">
+                    <p class="card__desc">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                      и сервисов. Все это позволит посетителю получить
+                      исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                </div>
+                <div class="perfomance card__perfomance">
+                  <h2 class="perfomance__title">Inspiration has no Borders</h2>
+                  <p class="perfomance_desc">Веб-сайт</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="card projects__card">
+              <a href="#" class="card__link">
+                <div class="card__thumb">
+                  <img src="./images/booik.jpg" alt="website of technokryak" width="370" class="card__img" />
+                  <div class="card__overlay">
+                    <p class="card__desc">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                      и сервисов. Все это позволит посетителю получить
+                      исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                </div>
+                <div class="perfomance card__perfomance">
+                  <h2 class="perfomance__title">Издание Limited Edition</h2>
+                  <p class="perfomance_desc">Дизайн</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="card projects__card">
+              <a href="#" class="card__link">
+                <div class="card__thumb">
+                  <img src="./images/labtag.jpg" alt="website of technokryak" width="370" class="card__img" />
+                  <div class="card__overlay">
+                    <p class="card__desc">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                      и сервисов. Все это позволит посетителю получить
+                      исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                </div>
+                <div class="perfomance card__perfomance">
+                  <h2 class="perfomance__title">Проект LAB</h2>
+                  <p class="perfomance_desc">Маркетинг</p>
+                </div>
+              </a>
+            </div>
+          </li>
+          <li class="projects__item">
+            <div class="card projects__card">
+              <a href="#" class="card__link">
+                <div class="card__thumb">
+                  <img src="./images/notebook2.jpg" alt="website of technokryak" width="370" class="card__img" />
+                  <div class="card__overlay">
+                    <p class="card__desc">Ресурс предлагает комплексные предложения с разным уровнем функционала
+                      и сервисов. Все это позволит посетителю получить
+                      исчерпывающие сведения о компании или частном лице.</p>
+                  </div>
+                </div>
+                <div class="perfomance card__perfomance">
+                  <h2 class="perfomance__title">Growing Business</h2>
+                  <p class="perfomance_desc">Приложение</p>
+                </div>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  <!-- футер -->
+  <footer class="foot">
+    <div class="container footer">
+      <div class="foot__address">
+        <a href="./index.html" class="logo foot__logo"><span class="logo__textweb">Web</span>Studio</a>
+        <address>
+          <ul class="foot__list list">
+            <li class="contact foot__contact ">
+              <a href="https://goo.gl/maps/2j7XMANTH2oE4sQw6" target="_blank" rel="noopener noreferrer"
+                class="contact__link contact__link--opt contact__link--no-hover">г. Киев, пр-т Леси Украинки, 26</a>
+            </li>
+            <li class="contact foot__contact">
+              <a href="tel:+380961111111" class="contact__link contact__link--opt">+38 096 111 11 11</a>
+            </li>
+            <li class="contact foot__contact">
+              <a href="mailto:info@devstudio.com" class="contact__link contact__link--opt">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+      <div>
+        <h3 class="foot__title">присоединяйтесь</h3>
+        <ul class="socials foot__socials list">
+          <li class="social_links foot__social-links">
+            <a href="" class="social-links__link social-links__link--inthefooter link">
+              <svg class="social-links__icon social-links__icon--backgorund" width="20px" height="20px">
+                <use href="./images/sprite.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social_links foot__social-links">
+            <a href="" class="social-links__link social-links__link--inthefooter link">
+              <svg class="social-links__icon social-links__icon--backgorund" width="20px" height="20px">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social_links foot__social-links">
+            <a href="" class="social-links__link social-links__link--inthefooter link">
+              <svg class="social-links__icon social-links__icon--backgorund" width="20px" height="20px">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social_links foot__social-links">
+            <a href="" class="social-links__link social-links__link--inthefooter link">
+              <svg class="social-links__icon social-links__icon--backgorund" width="20px" height="20px">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="sub foot__sub">
+        <p class="foot__title">Подпишитесь на рассылку</p>
+        <form>
+          <div class="sub__container">
+            <input type="email" name="subscribe" id="subscribe" placeholder="E-mail" class="sub__input">
+            <button class="btn sub__btn" type="submit">Подписаться <svg class="btn__icon">
+                <use href="./images/sprite.svg#icon-icon-send1"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

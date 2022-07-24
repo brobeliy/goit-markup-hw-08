@@ -1,0 +1,43 @@
+
+.features__list {
+  display: flex;
+  line-height: 1.71;
+  color: $secondary-text-color;
+}
+
+.features__item + .features__item {
+  margin-left: 30px;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 1.14;
+  color: $main-text-color;
+
+
+  &--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0; 
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+}
+
+.features__pic {
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $section-background-color;
+  margin-bottom: 30px;
+}

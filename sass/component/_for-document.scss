@@ -1,0 +1,45 @@
+h1,
+h2,
+h3,
+h4,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+address {
+ font-style: normal;
+ }
+
+/* tag body */
+body {
+  background-color: $main-color-project;
+  color: $main-text-color;
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.container {
+  margin: 0 auto;
+  /* outline: 2px solid tomato; */
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+/* For document */
+
+.list {
+  list-style: none;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+.features__title,
+.info__name {
+  margin-bottom: 10px;
+}

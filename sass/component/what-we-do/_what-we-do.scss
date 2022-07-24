@@ -1,0 +1,46 @@
+
+.works {
+  padding-top: 0;
+}
+
+.works__list {
+  display: flex;
+}
+
+.draft{
+ &+& {margin-left: 30px;} 
+}
+
+.works__title,
+.team__title,
+.client__title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.draft__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.draft__desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $main-color-project;
+  background-color: rgba(47, 48, 58, 0.8);
+}
