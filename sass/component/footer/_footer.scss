@@ -1,8 +1,17 @@
 .footer {
-  display: flex;
+  margin: 0 auto;
+  display: block;
+   @media screen and (min-width:768px) {
+    display: flex;
+  }
   align-items: baseline;
+  text-align: center;
 }
 .foot {
+ @media screen and (min-width:1200px) {
+  width: 100%;
+  }
+
   padding: 60px 0;
   background-color: $background-second-color;
 }

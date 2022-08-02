@@ -1,23 +1,42 @@
 
+
+.features {
+
+}
+
+
 .features__list {
-  display: flex;
+
+ @media screen and (min-width:768px) {
+    display: flex;
+  }
   line-height: 1.71;
   color: $secondary-text-color;
 }
 
 .features__item + .features__item {
-  margin-left: 30px;
+  @media screen and (min-width:1200px) {margin-left: 30px;}
 }
 
-.features__title {
+.features__item:not(:last-child) {
+  @media screen and (max-width:767px) {margin-bottom: 30px;}
+}
+
+.features__name {
+  margin-bottom: 10px;
+
+@media screen and (max-width:767px) {
+  text-align: center;
+}
+
   font-weight: 700;
   font-size: 14px;
   text-transform: uppercase;
   line-height: 1.14;
-  color: $main-text-color;
+  color: $main-text-color; }
 
 
-  &--visually-hidden {
+  .features__title--visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -31,7 +50,6 @@
   overflow: hidden;
 }
 
-}
 
 .features__pic {
   height: 120px;

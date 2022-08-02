@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
   <title>Web Studio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,11 +41,22 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+      <button type="button" class="header-nav__button button is-open" aria-label="Переключатель мобильного меню" aria-expanded="false" aria-controls="menu-container" data-menu-button >
+        <svg width="40px" height="40px">
+          <use class="icon-close" href="./images/sprite.svg#icon-closebackdrop"></use>
+          <use class="icon-menu" href="./images/sprite.svg#icon-name" ></use>
+        </svg>
+      </button>
+      <div class="menu-container is-open" id="menu-container" data-menu>
+        Меню хедер
+      </div>
+
+
     </div>
   </header>
   <main>
     <!-- Hero  -->
-    <section class="hero">
+    <section class="hero container">
       <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
       <button type="button" class="btn hero__btn" data-modal-open>Заказать услугу</button>
     </section>
@@ -61,7 +72,7 @@
                 <use href="./images/sprite.svg#icon-details"></use>
               </svg>
             </div>
-            <h3 class="features__title">Внимание к деталям</h3>
+            <h3 class="features__name">Внимание к деталям</h3>
             <p>
               Идейные соображения, а также начало повседневной работы по формированию позиции.
             </p>
@@ -72,7 +83,7 @@
                 <use href="./images/sprite.svg#icon-clock"></use>
               </svg>
             </div>
-            <h3 class="features__title">Пунктуальность</h3>
+            <h3 class="features__name">Пунктуальность</h3>
             <p>
               Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
             </p>
@@ -83,7 +94,7 @@
                 <use href="./images/sprite.svg#icon-plan"></use>
               </svg>
             </div>
-            <h3 class="features__title">Планирование</h3>
+            <h3 class="features__name">Планирование</h3>
             <p>
               Равным образом консультация с широким активом в значительной степени обуславливает.
             </p>
@@ -94,7 +105,7 @@
                 <use href="./images/sprite.svg#icon-tehno"></use>
               </svg>
             </div>
-            <h3 class="features__title">Современные технологии</h3>
+            <h3 class="features__name">Современные технологии</h3>
             <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
           </li>
         </ul>
@@ -129,12 +140,12 @@
     </section>
 
     <!-- Team -->
-    <section class="section team">
+    <section class="section team container">
       <div class="container">
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__list list">
           <li class="card team__card">
-            <img src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" />
+            <img class="card__photo" src="./images/igor.jpg" alt="Игорь Демьяненко" width="270" />
             <div class="info card__info">
               <h3 class="info__name">Игорь Демьяненко</h3>
               <p class="info__job">Product Designer</p>
@@ -170,7 +181,7 @@
             </div>
           </li>
           <li class="card team__card">
-          <img src="./images/olga.jpg" alt="Ольга Репина" width="270" />
+          <img class="card__photo" src="./images/olga.jpg" alt="Ольга Репина" width="270" />
           <div class="info card__info">
             <h3 class="info__name">Ольга Репина</h3>
             <p class="info__job">Frontend Developer</p>
@@ -206,7 +217,7 @@
           </div>
           </li>
           <li class="card team__card">
-          <img src="./images/niko.jpg" alt="Николай Тарасов" width="270" />
+          <img class="card__photo" src="./images/niko.jpg" alt="Николай Тарасов" width="270" />
           <div class="info card__info">
             <h3 class="info__name">Николай Тарасов</h3>
             <p class="info__job">Marketing</p>
@@ -242,7 +253,7 @@
           </div>
           </li>
           <li class="card team__card">
-            <img src="./images/miho.jpg" alt="Михаил Ермаков" width="270"/>
+            <img class="card__photo" src="./images/miho.jpg" alt="Михаил Ермаков" width="270"/>
             <div class="info card__info">
               <h3 class="info__name">Михаил Ермаков</h3>
               <p class="info__job">UI Designer</p>
@@ -321,7 +332,7 @@
     </section>
   </main>
   <!-- футер -->
-  <footer class="foot">
+  <footer class="foot container">
     <div class="container footer">
       <div class="foot__address">
         <a href="./index.html" class="logo foot__logo"><span class="logo__textweb">Web</span>Studio</a>
@@ -442,6 +453,7 @@
   </div>
 
   <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 
 </body>
 
