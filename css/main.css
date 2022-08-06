@@ -160,28 +160,42 @@ header {
 
 .header-nav__contacts {
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav__contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .header-nav__contact--retreat {
-  margin-left: 30px;
-  margin-right: 0px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .header-nav__contact--retreat {
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
 }
 
 .header-nav__contact--retreat:first-child {
   margin-left: 0px;
 }
 
-.contact__link {
-  padding: 32px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.contact__link--opt {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.contact__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -191,6 +205,12 @@ header {
   font-weight: 500;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .contact__link {
+    padding: 32px 0;
+  }
 }
 
 .contact__link:hover, .contact__link:focus {
@@ -238,6 +258,12 @@ header {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .hero__title {
+    width: 360px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

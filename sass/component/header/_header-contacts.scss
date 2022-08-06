@@ -1,22 +1,37 @@
 .header-nav__contacts {
   margin-left: auto;
-  display: flex;
+
+  @media screen and (min-width:1200px){
+    display: flex;
+  }
 
 }
 
 .header-nav__contact--retreat {
-margin-left: 30px;
-margin-right: 0px;
+  margin-bottom: 10px;
+  @media screen and (min-width:1200px){
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+;
 
 &:first-child {
   margin-left: 0px;
 }
 }
 
-.contact__link {
-  padding: 32px 0;
-  display: flex;
+.contact__link--opt {
   justify-content: center;
+}
+
+.contact__link {
+
+   @media screen and (min-width:1200px){
+    padding: 32px 0;
+    
+  }
+  display: flex;
   align-items: center;
   fill: $secondary-text-color;
   color: $secondary-text-color;
